@@ -1,7 +1,8 @@
 name: publish
 
-# Lixian's CI force-pushes each release APK to the `drop` branch. This turns it into a Release,
-# which is what the app checks for updates.
+# Lixian's CI force-pushes each release APK to the `drop` branch, together with this file
+# (GitHub reads a push's workflows from the pushed commit). This turns it into a Release,
+# which is what the app checks for updates. Source of truth: Lixian/release-channel/publish.yml.
 on:
   push:
     branches: [drop]
